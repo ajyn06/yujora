@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yujora | Yoga Studio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <div class="logo">
+      <img src="img/logo.png" alt="Yujora Logo">
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">home</a></li>
+        <li><a href="pricing.html">pricing</a></li>
+        <li><a href="classes.html">classes</a></li>
+        <li><a href="contact.html">contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Start -->
+  <section class="yoga">
+    <div class="yoga-img">
+      <img src="img/welcome.jpg" alt="Yoga Session">
+    </div>
+    <div class="yoga-text">
+      <h1>Welcome to Yujora</h1>
+      <p>
+        peace, balance, and strength come together. Whether you’re a complete beginner or an experienced yogi, our classes are designed to guide you through mindful movement and breath, helping you find calm in the middle of life’s busy rhythm.
+      </p>
+      <a href="classes.html" class="btn">book a class now</a>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about-section scroll-reveal" id="about">
+  <h2>About us</h2>
+  <p>
+    We believe yoga is more than just movement—it’s a way to bring balance, mindfulness, 
+    and strength into everyday life. Our studio was founded with the vision of creating 
+    a space where everyone, regardless of experience, can discover the benefits of yoga 
+    in a supportive and uplifting environment. From gentle flows to dynamic practices, 
+    we offer a variety of classes that nurture both body and mind.
+  </p>
+
+  <div class="about-images">
+    <div class="about-img scroll-zoom">
+      <img src="img/yoga1.jpg" alt="Yoga pose 1">
+    </div>
+    <div class="about-img scroll-zoom">
+      <img src="img/yoga2.jpg" alt="Yoga pose 2">
+    </div>
+    <div class="about-img scroll-zoom">
+      <img src="img/yoga3.jpg" alt="Yoga pose 3">
+    </div>
+  </div>
+</section>
+
+<!--Benefit-->
+<section class="benefits-section">
+  <div class="benefit-card scroll-reveal">
+    <img src="img/calm.png" alt="Stress Relief">
+    <h3>stress relief</h3>
+    <p>
+      Calm your mind and release tension through mindful movement and breathing. 
+      Each session helps reduce stress and restore inner balance.
+    </p>
+  </div>
+  <div class="benefit-card scroll-reveal">
+    <img src="img/flex.png" alt="Flexibility">
+    <h3>flexibility</h3>
+    <p>
+      Gentle stretches and flows improve mobility, posture, and body awareness 
+      perfect for both beginners and advanced yogis.
+    </p>
+  </div>
+  <div class="benefit-card scroll-reveal">
+    <img src="img/strength.png" alt="Strength">
+    <h3>strength</h3>
+    <p>
+      Yoga strengthens not only your body but also your resilience, giving you 
+      energy and stability for everyday life.
+    </p>
+  </div>
+  <div class="benefit-card scroll-reveal">
+    <img src="img/mind.png" alt="Mindfulness">
+    <h3>mindfulness</h3>
+    <p>
+      Stay present in the moment and build a deeper connection with yourself, 
+      fostering clarity, focus, and peace.
+    </p>
+  </div>
+</section>
+
+  <!-- Quote -->
+  <section class="quote-section scroll-reveal">
+    <div class="quote-overlay">
+      <p class="quote-text">
+        “Find your flow, calm your mind, and grow with Yujora.”
+      </p>
+      <p class="quote-author">— <em>Atasha Yujiyora</em></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <img src="img/footer.png" alt="Yujora Logo" class="footer-logo">
+      <p class="footer-text">yujiorastudio@hotmail.com</p>
+      <p class="footer-text">(+02) 80652178</p>
+      <p class="footer-rights">© 2025 Yujora. All rights reserved.</p>
+    </div>
+  </footer>
+
+</section>
+
+<script>
+window.addEventListener("load", () => {
+  document.querySelector("header").classList.add("fade-in");
+  document.querySelector(".yoga-text").classList.add("fade-in", "delay-1");
+  document.querySelector(".yoga-img").classList.add("fade-in", "delay-2");
+});
+
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+    }
+  });
+}, { threshold: 0.2 });
+
+document.querySelectorAll(".scroll-reveal, .scroll-zoom").forEach(el => {
+  observer.observe(el);
+});
+</script>
+</body>
+</html>
