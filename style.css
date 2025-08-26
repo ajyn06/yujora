@@ -53,12 +53,26 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1rem 0;
+  padding: 16px 0;
 }
 
 .logo img {
   height: 200px;
   margin-bottom: -20px;
+  transition: transform 0.5s ease;
+  animation: tiltLogo 4s ease-in-out infinite; 
+}
+
+.logo img:hover {
+  transform: scale(1.05) rotate(-2deg);
+}
+
+@keyframes tiltLogo {
+  0%   { transform: rotate(0deg); }
+  25%  { transform: rotate(2deg); }
+  50%  { transform: rotate(0deg); }
+  75%  { transform: rotate(-2deg); }
+  100% { transform: rotate(0deg); }
 }
 
 .nav-links {
@@ -160,12 +174,13 @@ header {
   text-decoration: none;
   color: #3f7d58;
   font-weight: 600;
-  transition: all 0.3s ease;
+  transition: all 0.3s ease, transform 0.3s ease;
 }
 
 .btn:hover {
   background: #3f7d58;
   color: #fff;
+  transform: translateY(-3px);
 }
 
 /* ABOUT US */
