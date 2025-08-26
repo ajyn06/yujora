@@ -274,16 +274,16 @@ header {
 }
 
 .benefit-card img {
-  width: 40px;  
-  height: 40px;
+  width: 90px;  
+  height: 90px;
   margin-bottom: 0.5rem;
   transition: transform 0.3s ease;
 }
 
 .benefit-card h3 {
   font-family: 'Source Serif Pro', serif;
-  font-size: 1rem; 
-  color: #2f5534;
+  font-size: 1.2rem; 
+  color: #3f7d58;
   margin-bottom: 0.3rem;
 }
 
@@ -348,13 +348,13 @@ header {
   font-size: 1rem;
   margin-top: -15px;
   text-align: end;
-  color: #ddd;
+  color: #ffffff;
   font-style: italic;
 }
 
 /* Footer */
 .footer {
-  background-color: #3c6e47;
+  background-color: #3F7D58;
   color: #fff;
   text-align: center;
   padding: 5px 5px;
