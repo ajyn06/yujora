@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yujora | Pricing</title>
+  <link rel="stylesheet" href="pricing.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <div class="logo">
+      <img src="img/logo.png" alt="Yujora Logo">
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">home</a></li>
+        <li><a href="pricing.html" class="active">pricing</a></li>
+        <li><a href="classes.html">classes</a></li>
+        <li><a href="contact.html">contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="pricing-intro">
+    <p>
+      At Yujora, we believe yoga should be accessible to everyone. Whether you’re 
+      looking to drop in for a single class or commit to our practice long-term, we 
+      offer flexible plans designed to fit your lifestyle and budget. Choose the option 
+      that feels right for your journey.
+    </p>
+  </section>
+
+ <section class="pricing-section">
+  <div class="pricing-card">
+    <img src="img/pricing1.jpg" alt="Drop In Class">
+    <div class="pricing-info">
+      <h3>Drop In Class</h3>
+      <p class="price">₱350 / per class</p>
+      <ul>
+        <li>Perfect for casual yogis</li>
+        <li>Pay only when you join</li>
+        <li>Access to any class of your choice</li>
+      </ul>
+      <button class="join-btn" data-plan="Drop In Class - ₱350 / per class">Join Now</button>
+      <hr>
+    </div>
+  </div>
+
+  <div class="pricing-card">
+    <img src="img/pricing2.jpg" alt="Monthly Pass">
+    <div class="pricing-info">
+      <h3>Monthly Pass</h3>
+      <p class="price">₱2,500 / month</p>
+      <ul>
+        <li>Unlimited classes</li>
+        <li>Priority booking</li>
+        <li>Free mat rental</li>
+      </ul>
+      <button class="join-btn" data-plan="Monthly Pass - ₱2,500 / month">Join Now</button>
+      <hr>
+    </div>
+  </div>
+
+  <div class="pricing-card">
+    <img src="img/pricing3.jpg" alt="Unlimited Annual">
+    <div class="pricing-info">
+      <h3>Unlimited Annual</h3>
+      <p class="price">₱25,000 / year</p>
+      <ul>
+        <li>Best value plan</li>
+        <li>Unlimited access all year</li>
+        <li>Exclusive workshops included</li>
+      </ul>
+      <button class="join-btn" data-plan="Unlimited Annual - ₱25,000 / year">Join Now</button>
+      <hr>
+    </div>
+  </div>
+
+</section>
+
+ <!-- Form -->
+<div id="form-overlay" class="form-overlay">
+  <div class="form-box">
+    <button class="close-btn" onclick="closeForm()">close</button>
+    <h3 id="form-plan-title">Drop In Class</h3>
+    <p id="form-plan-price">₱350 / per class</p>
+
+    <form id="pricingForm" onsubmit="submitForm(event)">
+      <label for="fullName">Full Name:</label>
+      <input type="text" id="fullName" required>
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" required>
+
+      <label for="contact">Contact Number:</label>
+      <input type="text" id="contact" required>
+
+      <button type="submit" class="submit-btn">Submit</button>
+    </form>
+  </div>
+</div>
+
+<div id="notification" class="notification"> ✔ Form Submitted!</div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <img src="img/footer.png" alt="Yujora Logo" class="footer-logo">
+      <p class="footer-text">yujiorastudio@hotmail.com</p>
+      <p class="footer-text">(+02) 80652178</p>
+      <p class="footer-rights">© 2025 Yujora. All rights reserved.</p>
+    </div>
+  </footer>
+
+<script src="pricing.js"></script>
+
+</body>
+</html>
