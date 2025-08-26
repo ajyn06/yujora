@@ -1,10 +1,14 @@
-body { 
+* {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f9fdfb;
-  color: #2c3e2f;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+body {
+  font-family: Arial, sans-serif;
+  color: #3F7D58;
+  line-height: 1.6;
+}
 header {
   display: flex;
   flex-direction: column;
@@ -34,17 +38,14 @@ header {
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 32px; 
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 0;
+  gap: 2rem;
 }
 
 .nav-links a {
   text-decoration: none;
   color: #3f7d58;
   font-weight: 500;
-  padding: 6px 24px; 
+  padding: 0.4rem 1.5rem;
   font-size: 17px;
   border-radius: 25px;
   transition: all 0.3s ease;
@@ -212,18 +213,41 @@ button:hover {
   button {
     width: 40%;
   }
-  .logo img {
-    height: 150px;
-  }
-  .nav-links {
-    gap: 20px;
-  }
   .image-footer {
     height: 200px;
   }
 }
 
 @media (max-width: 480px) {
+  header {
+    padding: 10px 0;
+  }
+  .logo img {
+    height: 120px;
+  }
+  .nav-links {
+    gap: 10px;
+  }
+  .nav-links a {
+    padding: 5px 15px;
+    font-size: 14px;
+  }
+  
+  .footer-logo {
+    width: 90px;
+    margin-bottom: -15px;
+    margin-top: 3px;
+  }
+  .footer-text {
+    margin-top: -5px;
+    margin-bottom: 5px;
+    font-size: 14px;
+  }
+  .footer-rights {
+    font-size: 12px;
+    margin-top: 1px;
+    margin-bottom: 10px;
+  }
   h2 {
     font-size: 26px;
   }
@@ -239,10 +263,6 @@ button:hover {
   }
   .logo img {
     height: 120px;
-  }
-  .nav-links {
-    flex-direction: column;
-    gap: 12px;
   }
   .image-footer {
     height: 180px;

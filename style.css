@@ -379,6 +379,37 @@ header {
   color: #dcdcdc;
 }
 
+@media (max-width: 480px) {
+  header {
+    padding: 10px 0;
+  }
+  .logo img {
+    height: 120px;
+  }
+  .nav-links {
+    gap: 10px;
+  }
+  .nav-links a {
+    padding: 5px 15px;
+    font-size: 14px;
+  }
+  .footer-logo {
+    width: 90px;
+    margin-bottom: -15px;
+    margin-top: 3px;
+  }
+  .footer-text {
+    margin-top: -5px;
+    margin-bottom: 5px;
+    font-size: 14px;
+  }
+  .footer-rights {
+    font-size: 12px;
+    margin-top: 1px;
+    margin-bottom: 10px;
+  }
+}
+
 @media (max-width: 768px) {
   .quote-text {
     font-size: 1.3rem;

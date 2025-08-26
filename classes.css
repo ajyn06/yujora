@@ -219,32 +219,61 @@ header {
   color: #ffffff;
 }
 
+@media (max-width: 480px) {
+  .intro{
+    font-size: 14px;
+  }
+  header {
+    padding: 10px 0;
+  }
+  .logo img {
+    height: 120px;
+  }
+  .nav-links {
+    gap: 10px;
+  }
+  .nav-links a {
+    padding: 5px 15px;
+    font-size: 14px;
+  }
+  .footer-logo {
+    width: 90px;
+    margin-bottom: -15px;
+    margin-top: 3px;
+  }
+  .footer-text {
+    margin-top: -5px;
+    margin-bottom: 5px;
+    font-size: 14px;
+  }
+  .footer-rights {
+    font-size: 12px;
+    margin-top: 1px;
+    margin-bottom: 10px;
+  }
+}
+
 @media (max-width: 900px) {
   .instructor {
     flex-direction: column !important; 
     text-align: center;
     padding-inline: 2rem;
   }
-
   .instructor.reverse {
     flex-direction: column !important; 
   }
-
   .instructor img {
     width: 200px;
     height: 200px;
-    margin-bottom: 1rem;
+    margin-bottom: 0.3rem;
   }
-
   .info {
     text-align: center !important;
   }
-
   .info hr {
     margin: 0.5rem auto 1rem auto; 
     width: 60%;
   }
-
   .career-description {
     text-align: left; 
   }
