@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yujora | Classes</title>
+  <link rel="stylesheet" href="classes.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <div class="logo">
+      <img src="img/logo.png" alt="Yujora Logo">
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">home</a></li>
+        <li><a href="pricing.html">pricing</a></li>
+        <li><a href="classes.html" class="active">classes</a></li>
+        <li><a href="contact.html">contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <p class="intro">At Yujora, we believe the right guide can transform your practice. 
+      Our instructors bring years of experience, passion, and unique styles 
+      of teaching to help you grow at your own pace. Whether you’re seeking mindful meditation, 
+      deep flexibility, or energizing flows, you’ll find a class—and a teacher—that resonates with your journey.</p>
+
+  <div class="instructor" onclick="toggleCareer('aiko-desc')">
+      <img src="img/aiko.jpg" alt="Aiko Tanaka">
+      <div class="info">
+        <div class="name">Aiko Tanaka</div>
+        <div class="title">Vinyasa & Meditation Instructor</div>
+        <hr>
+        <div class="schedule">
+          <strong>Monday:</strong> 7:00 AM – Sunrise Vinyasa<br>
+          <strong>Saturday:</strong> 9:00 AM – Gentle Vinyasa & Breathwork
+        </div>
+        <div id="aiko-desc" class="career-description">
+          Aiko has spent over a decade guiding students through the art of mindful flow. 
+          She trained in Kyoto and Bali, blending Eastern traditions with modern practice. 
+          Her passion lies in helping people discover meditation as a daily anchor for balance and clarity.
+        </div>
+      </div>
+    </div>
+
+<div class="instructor reverse" onclick="toggleCareer('emi-desc')">
+  <img src="img/emi.jpg" alt="Emi Carter">
+  <div class="info reverse-text">
+    <div class="name">Emi Carter</div>
+    <div class="title">Power & Restorative Yoga Instructor</div>
+    <hr>
+    <div class="schedule">
+      <strong>Friday:</strong> 7:00 AM – Morning Strength & Energy<br>
+      <strong>Saturday:</strong> 5:00 AM – Restorative Yoga & Relaxation
+    </div>
+    <div id="emi-desc" class="career-description">
+      Emi’s journey began as a professional dancer before she transitioned into yoga. 
+      With a background in anatomy and body alignment, she focuses on strength, recovery, and resilience. 
+      Her classes balance fiery sequences with soothing restorative practices.
+    </div>
+  </div>
+</div>
+
+    <div class="instructor" onclick="toggleCareer('sarah-desc')">
+      <img src="img/sarah.jpg" alt="Sarah Mitchell">
+      <div class="info">
+        <div class="name">Sarah Mitchell</div>
+        <div class="title">Hatha Yoga Specialist</div>
+        <hr>
+        <div class="schedule">
+          <strong>Thursday:</strong> 5:30 PM – Balance & Alignment Practice<br>
+          <strong>Sunday:</strong> 10:00 AM – Weekend Gentle Flow
+        </div>
+        <div id="sarah-desc" class="career-description">
+          Sarah has been teaching yoga for over 15 years, with certifications in Hatha and therapeutic yoga. 
+          Her gentle, encouraging approach has supported hundreds of students in overcoming stress and improving posture. 
+          She specializes in alignment and mindfulness.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <img src="img/footer.png" alt="Yujora Logo" class="footer-logo">
+      <p class="footer-text">yujiorastudio@hotmail.com</p>
+      <p class="footer-text">(+02) 80652178</p>
+      <p class="footer-rights">© 2025 Yujora. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="classes.js"></script>
+</body>
+</html>
